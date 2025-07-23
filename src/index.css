@@ -2,41 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* LazygraphAI Design System - Futuristic AI Trading Platform */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Background & Foreground */
+    --background: 230 23% 6%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card System */
+    --card: 230 20% 9%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Popover System */
+    --popover: 230 20% 9%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary Brand - Electric Blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 230 23% 6%;
+    --primary-glow: 217 100% 70%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Deep Purple */
+    --secondary: 258 90% 66%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent - Electric Green */
+    --accent: 142 71% 45%;
+    --accent-foreground: 230 23% 6%;
+    --accent-glow: 142 100% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Muted Tones */
+    --muted: 230 15% 15%;
+    --muted-foreground: 217 10% 64%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Success & Profit Colors */
+    --success: 142 71% 45%;
+    --success-foreground: 230 23% 6%;
+
+    /* Destructive & Risk */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders & Inputs */
+    --border: 230 15% 20%;
+    --input: 230 15% 15%;
+    --ring: 217 91% 60%;
 
-    --radius: 0.5rem;
+    /* Design System Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(230 20% 12%));
+    --gradient-card: linear-gradient(135deg, hsl(var(--card)), hsl(230 15% 12%));
+
+    /* Shadows & Glows */
+    --shadow-primary: 0 0 50px hsl(var(--primary) / 0.3);
+    --shadow-accent: 0 0 30px hsl(var(--accent) / 0.4);
+    --shadow-card: 0 10px 30px hsl(0 0% 0% / 0.3);
+    --glow-primary: 0 0 20px hsl(var(--primary-glow) / 0.6);
+    --glow-accent: 0 0 20px hsl(var(--accent-glow) / 0.6);
+
+    /* Animation Variables */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
