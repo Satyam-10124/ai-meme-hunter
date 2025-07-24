@@ -173,6 +173,27 @@ export default {
 						transform: 'rotateY(5deg)',
 						boxShadow: '0 0 40px hsl(var(--accent) / 0.6)'
 					}
+				},
+				'grid-pulse': {
+					'0%, 100%': { opacity: '0.1' },
+					'50%': { opacity: '0.3' }
+				},
+				'float-stable': {
+					'0%, 100%': { transform: 'translateY(0px) translateX(0px)' },
+					'33%': { transform: 'translateY(-15px) translateX(10px)' },
+					'66%': { transform: 'translateY(10px) translateX(-5px)' }
+				},
+				'spin-reverse': {
+					'0%': { transform: 'rotate(360deg)' },
+					'100%': { transform: 'rotate(0deg)' }
+				},
+				'orbit': {
+					'0%': { transform: 'rotate(0deg) translateX(40px) rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg) translateX(40px) rotate(-360deg)' }
+				},
+				'orbit-reverse': {
+					'0%': { transform: 'rotate(360deg) translateX(30px) rotate(-360deg)' },
+					'100%': { transform: 'rotate(0deg) translateX(30px) rotate(0deg)' }
 				}
 			},
 			animation: {
@@ -185,9 +206,15 @@ export default {
 				'typewriter': 'typewriter 4s steps(30) 1s both',
 				'blink': 'blink 1s step-end infinite',
 				'grid-in': 'grid-in 0.6s ease-out forwards',
+				'grid-pulse': 'grid-pulse 2s ease-in-out infinite',
 				'matrix-rain': 'matrix-rain 3s linear infinite',
 				'rotate-3d': 'rotate-3d 20s ease-in-out infinite',
 				'data-flow': 'data-flow 2s ease-in-out infinite',
+				'float-stable': 'float-stable 8s ease-in-out infinite',
+				'spin-slow': 'spin 8s linear infinite',
+				'spin-reverse': 'spin-reverse 6s linear infinite',
+				'orbit': 'orbit 4s linear infinite',
+				'orbit-reverse': 'orbit-reverse 3s linear infinite',
 				'hologram': 'hologram 4s ease-in-out infinite'
 			}
 		}

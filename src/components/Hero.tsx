@@ -48,15 +48,45 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
-        {/* Logo with Hologram Effect */}
-        <div className="mb-8 animate-fade-in">
-          <div className="relative inline-block">
-            <img 
-              src="/lovable-uploads/60352080-835e-449f-87ac-2764711a13a4.png" 
-              alt="LazygraphAI" 
-              className="mx-auto h-32 w-auto animate-hologram"
-            />
-            <div className="absolute inset-0 bg-gradient-primary opacity-20 rounded-full blur-xl animate-pulse-glow"></div>
+        {/* Enhanced Logo with Professional Animations */}
+        <div className="mb-12 animate-fade-in">
+          <div className="relative inline-block group">
+            {/* Logo Container with 3D Effect */}
+            <div className="relative transform-gpu transition-all duration-1000 hover:scale-110 hover:-translate-y-2">
+              {/* Background Glow Layers */}
+              <div className="absolute inset-0 bg-gradient-primary opacity-30 rounded-full blur-2xl animate-pulse-glow scale-150"></div>
+              <div className="absolute inset-0 bg-gradient-accent opacity-20 rounded-full blur-xl animate-pulse-glow scale-125" style={{animationDelay: '0.5s'}}></div>
+              
+              {/* Rotating Ring Effect */}
+              <div className="absolute inset-0 rounded-full border-2 border-primary/30 animate-spin-slow scale-125"></div>
+              <div className="absolute inset-0 rounded-full border border-accent/20 animate-spin-reverse scale-110" style={{animationDelay: '1s'}}></div>
+              
+              {/* Main Logo */}
+              <div className="relative z-10 p-6 bg-card/20 backdrop-blur-sm rounded-2xl border border-border/30 shadow-glow-primary">
+                <img 
+                  src="/lovable-uploads/60352080-835e-449f-87ac-2764711a13a4.png" 
+                  alt="LazygraphAI" 
+                  className="mx-auto h-32 w-auto animate-hologram transition-all duration-500 group-hover:drop-shadow-2xl"
+                />
+                
+                {/* Corner Accents */}
+                <div className="absolute top-2 left-2 w-4 h-4 border-l-2 border-t-2 border-primary/60 animate-pulse"></div>
+                <div className="absolute top-2 right-2 w-4 h-4 border-r-2 border-t-2 border-accent/60 animate-pulse" style={{animationDelay: '0.3s'}}></div>
+                <div className="absolute bottom-2 left-2 w-4 h-4 border-l-2 border-b-2 border-secondary/60 animate-pulse" style={{animationDelay: '0.6s'}}></div>
+                <div className="absolute bottom-2 right-2 w-4 h-4 border-r-2 border-b-2 border-primary/60 animate-pulse" style={{animationDelay: '0.9s'}}></div>
+              </div>
+              
+              {/* Floating Particles around Logo */}
+              <div className="absolute -top-4 -left-4 w-2 h-2 bg-primary/60 rounded-full animate-orbit"></div>
+              <div className="absolute -top-4 -right-4 w-1.5 h-1.5 bg-accent/60 rounded-full animate-orbit-reverse" style={{animationDelay: '1s'}}></div>
+              <div className="absolute -bottom-4 -left-4 w-1 h-1 bg-secondary/60 rounded-full animate-orbit" style={{animationDelay: '2s'}}></div>
+              <div className="absolute -bottom-4 -right-4 w-2.5 h-2.5 bg-primary-glow/40 rounded-full animate-orbit-reverse" style={{animationDelay: '1.5s'}}></div>
+            </div>
+            
+            {/* Professional Badge */}
+            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 px-4 py-1 bg-gradient-accent/90 backdrop-blur-sm border border-accent/30 rounded-full text-xs font-mono text-accent-foreground animate-fade-in delay-1000">
+              AI POWERED
+            </div>
           </div>
         </div>
 
